@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapremina</title>
+</head>
+
+<body>
+    <script>
+        let numberA = prompt("Visina:");
+        let numberB = prompt("Poluprecnik:");
+
+        let result = getVolume(numberA, numberB);
+
+        alert("Povrsina je: " + result);
+
+        function getVolume(radius, height) {
+            return Math.pow(parseInt(radius), 2) * height * Math.PI;
+        }
+    </script>
+</body>
+</html>
